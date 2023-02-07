@@ -18,7 +18,7 @@ await page.setExtraHTTPHeaders({
 await page.goto("URL DA PÁGINA AQUI", { waitUntil: "networkidle0" });
 await page.waitFor(7500); // espera 7 segundos e meio para a próxma linha 
 
-await page.click(`input[name="user"]`); // Da um click falso no input de login (deve prourar o input e alterar o campo name="user")
+await page.click(`input[name="user"]`); // Da um click falso no input de login (deve procurar o input e alterar o campo name="user")
 await page.keyboard.type("Insira o usuário aqui"); // digita uma string no input
 await page.click('input[type="password"]'); //Da um click falso no input de sennha
 await page.keyboard.type("Insira a senha aqui"); // digita uma string no input (deve procurar o input e alterar o campo type="password")
